@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="dramatic-fireworks.css">
+    <title>Dramatic Fireworks</title>
+    <style>
+      .back-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+        background-color: #ff4081;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.3s ease;
+      }
+
+      .back-button:hover {
+        background-color: #e91e63;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="instructions">Coba pencet dimana aja</div>
+    
+    <!-- Tombol Kembali ke Halaman Sebelumnya -->
+    <button class="back-button" onclick="goBack()">⬅ Kembali</button>
+
+    <script src="dramatic-fireworks.js"></script>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>
